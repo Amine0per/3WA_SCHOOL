@@ -1,0 +1,76 @@
+
+body {
+    background-image: url(../images/fond.png);
+    font-family: "tahoma";
+    color: #5c5b5b;
+    margin: 0px;
+}
+
+nav ul li a {
+    color: #314723;
+}
+
+main {
+    padding: 80px;
+}
+
+.conteneur {
+    width: 750px;
+    margin: auto;
+    background: #fff;
+}
+
+.logo {
+    float: left;
+}
+
+.police {
+    font-family: "oswald";
+}
+
+nav {
+    background: #B8CB21;
+    font-size: 1.3em;
+    height: 125px;
+}
+
+h2 {
+    color: #B8CB21;
+    font-weight: 400;
+}
+
+nav ul {
+    float: right;
+    padding: 20px;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 20px;
+}
+
+section {
+    overflow: hidden;
+}
+
+section img {
+    float: left;
+    margin-right: 10px;
+}
+
+.btn {
+    background: #B8CB21;
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-family: "tahoma";
+    color: #fff;
+    display: block;
+    float: right;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.7em;
+    margin-top: 20px;
+}
