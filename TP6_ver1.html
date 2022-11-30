@@ -11,10 +11,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+      
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css%22%3E">
+
     <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script>   <!-- Font Awesome -->
 
 
@@ -28,9 +29,15 @@
 
 <body>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+    
     <script src="https://kit.fontawesome.com/14273d579a.js" crossorigin="anonymous"></script> 
-   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
 
 
     <style>
@@ -148,30 +155,30 @@
 
                 <div class="row mt-4 ">
        
-                    <div class="col-7 "> 
+                    <div class="col-7"> 
 
                         <table class="border-light">
 
-                            <tr > 
+                            <tr> 
 
-                                <td >
+                                <td>
 
-                                    <i class="fab fa-html5 fa-2x me-3 text-primary"> <strong> <span style="color:black" font-family="">HTML5</span> </strong> </i>
-
+                                    <i class="fab fa-html5 fa-2x  text-primary"> <strong> <span style="color:black" font-family="">HTML5</span> </strong> </i>
+                                    
                                 </td>
 
                                 <td>
 
                                     <div class="progress" style="width: 16cm; height: 8mm;">
                 
-                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
                                         
                                         </div>
                                     </div>
                                 </td> 
                             </tr>
 
-                            <tr > 
+                            <tr> 
 
                                 <td>
                                 
@@ -252,6 +259,7 @@
 
 
                 </div>
+
 
                     <br>
                 <div class="row mt-5">
@@ -373,11 +381,11 @@
 
                 <h2>Projets perso et pro</h2>
 
-                <div class="row mt-5">       
+                <div class="row mt-">       
 
                     <div class="col-3"> 
 
-                        <div class="card"> 
+                        <div class="card">                        <!-- card 1-->
 
                             <div class="card-header overflow-hidden p-0"> 
                                 
@@ -389,14 +397,32 @@
                                 <h4>Projet 1</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, molestiae!
                                 
                                 <br>
-                                <button type="button" class="btn btn-primary mt-3" >En savoir plus</button>
+                                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#ensavoirplus1">En savoir plus</button>
+
+                                <div class="modal mt-5" id="ensavoirplus1" tabindex="-1" aria-labelledby="ensavoirplus1label">
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h2 class="modal-title" id="ensavoirplus1label">Titre du projet 1</h2>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          Lorem ipsum dolor sit amet.
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="col-3">  
 
-                        <div class="card"> 
+                        <div class="card">                   <!-- card 2-->
 
                             <div class="card-header overflow-hidden p-0"> 
 
@@ -408,14 +434,33 @@
                                 <h4>Projet 2</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, molestiae!
                
                                 <br>                             
-                                <button type="button" class="btn btn-primary mt-3" >En savoir plus</button>
+                                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#ensavoirplus2">En savoir plus</button>
+
+                                <div class="modal mt-5" id="ensavoirplus2" tabindex="-1" aria-labelledby="ensavoirplus2label" >
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h2 class="modal-title" id="ensavoirplus2label">Titre du projet 2</h2>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          Lorem ipsum dolor sit amet.
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
                             </div>
                         </div>
                     </div>
 
                     <div class="col-3">
 
-                        <div class="card"> 
+                        <div class="card">                    <!-- card 3-->
 
                             <div class="card-header overflow-hidden p-0"> 
                                 
@@ -427,14 +472,34 @@
                                 <h4>Projet 3</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, molestiae!
 
                                 <br> 
-                                <button type="button" class="btn btn-primary mt-3" >En savoir plus</button>
+                                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#ensavoirplus3">En savoir plus</button>
+
+                                <div class="modal mt-5" id="ensavoirplus3" tabindex="-1" aria-labelledby="ensavoirplus3label" >
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h2 class="modal-title" id="ensavoirplus3label">Titre du projet 3</h2>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          Lorem ipsum dolor sit amet.
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
                             </div>
                         </div> 
                     </div>
 
                     <div class="col-3">
 
-                        <div class="card"> 
+                        <div class="card">                    <!-- card 4-->
 
                             <div class="card-header overflow-hidden p-0"> 
                                 
@@ -446,7 +511,30 @@
                                 <h4>Projet 4</h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, molestiae!
                             
                                 <br> 
-                                <button type="button" class="btn btn-primary mt-3" >En savoir plus</button>
+                                <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#ensavoirplus4" >En savoir plus</button>
+
+
+                                <div class="modal mt-5" id="ensavoirplus4" tabindex="-1" aria-labelledby="ensavoirplus4label" >
+                                    <div class="modal-dialog">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h2 class="modal-title" id="ensavoirplus4label">Titre du projet 4</h2>
+                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                          Lorem ipsum dolor sit amet.
+                                        </div>
+                                        <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+
+
+
                             </div>
                         </div> 
                     </div>
@@ -509,9 +597,15 @@
                         </form>
                     </div>
                 </div> 
-            </div>        
+            </div>  
         </section>
 
+
+
+
+
+
+        
     </main>
 
 
@@ -519,7 +613,7 @@
 
 
 
-    <footer class="border-top py-3 .bg-light" >
+    <footer class="border-top py-3 bg-light" >
 
         <div class="container">
 
@@ -555,6 +649,10 @@
                         <i class="fa fa-twitter-square fa-2x"></i>
                 </div>
             </div> 
+
+
+
+
         </div>            
     </footer>
 
