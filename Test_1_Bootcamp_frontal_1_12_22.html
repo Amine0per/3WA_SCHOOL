@@ -38,62 +38,6 @@ body {
    
 }
 
-
-
-
-.accordion {
-
-  background-color: white;
-  padding: 18px;
-  width: 1350px;
-  height: 50px;
-  border: none;
-  text-align: left;
-  transition: 0.4s;
-  padding-bottom: 40px;
-  
-}
-
-
-.panel {
- padding: 5px 10px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 1s ;
-}
-
-.chevron{
-
-float: right;
-
-}
-
-.contacttitles{
-
-    line-height: 2;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    font-size: large;
-    font-weight: bold;
-    border-bottom-width: 200px ;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.upbutton{
-
-    font-size: 30px;
-    border-radius: 50%;
-    padding: 8px;
-
-}
-
-.card{
-width: 300px;
-height: 530px;
-
-}
-
-
 </style>
 
 
@@ -324,33 +268,67 @@ height: 530px;
 
             <div class="container">
 
-                     <h2 class="text-center mb-5 text-nowrap">Questions fréquemment posées</h2>
+                     <h2 class="text-center text-nowrap fw-bold">Questions fréquemment posées</h2>
                     
-             
-                    <button class="accordion bg-light border-bottom ">Où se situent exactement ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
-                    <div class="panel">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    
-                    <button class="accordion bg-light border-bottom ">Combien ça coûte d'assister ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
-                    <div class="panel">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    
-                    <button class="accordion bg-light border-bottom ">Que dois-je savoir ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
-                    <div class="panel">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
+                     <div class="accordion accordion-flush bg-light" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Où se situent exactement ?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam molestias iure officia ex assumenda? Doloribus accusamus ex libero accusantium reprehenderit deleniti eaque minus? Sit, velit sunt, cum officia necessitatibus quia quos possimus explicabo delectus, ipsum dignissimos quisquam similique blanditiis fugiat?
 
-                    <button class="accordion bg-light border-bottom ">Comment m'inscrire ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
-                    <div class="panel">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
-                    
-                    <button class="accordion bg-light ">M'aidez-vous à trouver un emploi ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
-                    <div class="panel">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                Combien ça coûte d'assister ?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas sed earum dolorem est omnis. Ipsam maxime alias magnam architecto provident amet eveniet ducimus tenetur velit enim quasi nobis esse excepturi dolore dicta quas nihil ad, corporis nemo unde fugiat modi.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Que dois-je savoir ?
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magnam sequi obcaecati impedit et sint earum laudantium tempora, repudiandae voluptatum repellendus pariatur consequatur alias distinctio quis laborum quam, eveniet libero provident accusantium excepturi maxime recusandae? Sit voluptatibus quod possimus harum!</div>
+                          </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFour">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Comment m'inscrire ?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint non, porro illum repudiandae dolor veritatis architecto, eum assumenda nesciunt reiciendis iure vero maxime suscipit distinctio mollitia eius ipsa consequuntur at? Sapiente quasi numquam pariatur non ut obcaecati cum veniam ipsam.</div>
+                            </div>
+                          </div>
+
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingFive">
+                              <button class="accordion-button collapsed bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                M'aidez-vous à trouver un emploi ?
+                              </button>
+                            </h2>
+                            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                              <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odio, rem dolore facilis nulla reiciendis! Esse qui similique aliquam provident maiores est quaerat voluptas voluptatum aliquid vitae possimus alias in, incidunt reprehenderit veritatis? Deserunt mollitia hic deleniti debitis eligendi fuga.</div>
+                            </div>
+                          </div>
+                      </div>
+                   
+                   
+                   
             </div>
         </section>
 
@@ -486,14 +464,14 @@ height: 530px;
 
                     <div class="col-md-4">  
                         
-                        <h2 class="fw-bold mb-3 text-center text-nowrap">Informations de contact</h2>
+                        <h2 class="fw-bold  text-center text-nowrap mb-3">Informations de contact</h2>
 
-                        <div class="contactinfos">
-                            <p class="border-bottom"> <span class="contacttitles">Emplacement principal : </span> 50 Main St Boston MA </p>
-                            <p class="border-bottom"> <span class="contacttitles">Téléphone d'inscription : </span> 576-676-768 </p>
-                            <p class="border-bottom"> <span class="contacttitles">Téléphone étudiant : </span> 33-3333 </p>
-                            <p class="border-bottom"> <span class="contacttitles">Email d'inscription : </span> bootcamp@dev.io </p>
-                            <p> <span class="contacttitles">Email étudiant : </span> student@stud.io </p>
+                        <div class="">
+                            <p class="border-bottom pb-3"> <span class="fw-bold">Emplacement principal : </span> 50 Main St Boston MA </p>
+                            <p class="border-bottom pb-3"> <span class="fw-bold">Téléphone d'inscription : </span> 576-676-768 </p>
+                            <p class="border-bottom pb-3"> <span class="fw-bold">Téléphone étudiant : </span> 33-3333 </p>
+                            <p class="border-bottom pb-3"> <span class="fw-bold">Email d'inscription : </span> bootcamp@dev.io </p>
+                            <p class=""> <span class="fw-bold">Email étudiant : </span> student@stud.io </p>
                         </div>
                     </div>
                     
@@ -530,10 +508,16 @@ height: 530px;
 
                </div>
                
-               <div class="col-md-4 text-md-end"> <a href="#headerup"><button class="upbutton bg-dark border-primary" >  <i class="fa fa-arrow-up text-primary" aria-hidden="true"></i> </button></a>  </div>
+               <div class="col-md-4 text-md-end">
+                    <a href="#headerup">
+                        <button class=" border-primary  rounded-circle btn-lg bg-dark" >  
+                            <i class="fa fa-arrow-up text-primary fa-2x" aria-hidden="true"></i> 
+                        </button>
+                    </a>  
+                </div>
                            
             </div> 
-        </div>            
+        </div>                                                                                
     </footer>
 
 
@@ -542,22 +526,7 @@ height: 530px;
 
       <!-- javascript pour l'accordeon utilise dans la section questions frequement posees -->
 
-<script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-        } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-        } 
-      });
-    }
-</script>
+
   
 
 
