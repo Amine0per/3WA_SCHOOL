@@ -32,50 +32,13 @@
 <style>         
 
 body {
+
     font-family:Arial, Helvetica, sans-serif;
     font-size: larger;
    
 }
 
 
-label.btn{
-
-    margin-left:-5px;
-    margin-bottom: 3px;   
-    height: 46px;
-    width: 180px;
-    padding: 10px;
-    border-radius: 0px 5px 5px 0px;
-    white-space:nowrap;  
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-       
-        }
-
-input{
-       width: 300px;
-       height: 45px;
-       padding: 10px;
-       border-radius: 5px 0px 0px 5px;
-       border: 0;
-       font-family: Arial, Helvetica, sans-serif;
-    }
-
-
-  
-.p11{
-
-       line-height: 1.4;
-       font-size: larger;
-       font-family: Arial, Helvetica, sans-serif;
-       font-weight: lighter;
-       
-    }
-
-
-.bt1{  border-radius: 4px 4px 4px 4px;  font-size: large; }
-
-.bt2{    border-radius: 4px 4px 4px 4px;  font-size: large;  width: 150px; height: 50px; }
 
 
 .accordion {
@@ -194,14 +157,14 @@ height: 530px;
 
                     <div class="col-md-7">
 
-                        <div class="p11">
+                        
 
                             <h1 class="fw-bold text-white text-nowrap">Devenir <span class="text-warning">Développeur Web </span></h1>
                         
-                            <p class="text-white">Nous nous concentrons sur l'enseignement à nos étudiants <br> des bases des technologies les plus récentes et les plus <br> performantes pour les préparer à leur premier role de <br> développeur.</p>
+                            <p class="text-white fw-light">Nous nous concentrons sur l'enseignement à nos étudiants <br> des bases des technologies les plus récentes et les plus <br> performantes pour les préparer à leur premier role de <br> développeur.</p>
 
                             <a href="#" class="bt1 btn  btn-primary mt-3 btn-lg">Commencez l'inscription</a>
-                        </div>
+                        
                     </div>
 
                     <div class="col-md-5">
@@ -225,25 +188,28 @@ height: 530px;
 
                     <div class="col-md-6">
 
-                        <h2 class="text-white text-nowrap">Inscrivez-Vous A Notre Lettre <br> D'information </h2>
+                        <h3 class="text-white text-nowrap fw-bold">Inscrivez-Vous A Notre Lettre <br> D'information </h3>
                      
                     </div>
                     
                     <div class="col-md-5 offset-1">
 
                         <form action="form">
-                            <div class="text-nowrap">
-                            <fieldset>
-                                
-                                <input type="email" name="email" id="email" placeholder="Entrez l'e-mail">
-                                <label for="email" type="submit" class="btn btn-dark ">nous faire parvenir</label>
-                                
-                            </fieldset>
-                        </div>
+
+                            <div class="input-group ">
+
+                                <input type="email" class="form-control-lg" name="email" id="email" placeholder="Entrez l'e-mail">                               
+                                <button class="btn btn-dark btn-lg" for="email" type="submit">nous faire parvenir</button>
+                           
+                            </div>
                         </form>
                     </div>
                 </div>
             </div>
+
+
+
+       
 
                  <!-- aside virtuel / hybride -->
 
@@ -258,10 +224,10 @@ height: 530px;
                             <div class="bg-dark text-white text-center p-4 rounded w-100 h-100">
 
                                 <i class="fa fa-laptop fa-3x mb-3" aria-hidden="true"></i>
-                                <h2>Virtuel</h2>
+                                <h3 class="fw-bold">Virtuel</h3>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur commodi architecto? Atque, ad.
                                 <br>
-                                <button type="button" class="bt1 btn btn-primary mt-3">Lire la suite</button>
+                                <button type="button" class="btn btn-primary mt-3 btn-lg">Lire la suite</button>
 
                             </div>
                         </div>
@@ -271,10 +237,10 @@ height: 530px;
                             <div class="bg-secondary text-white text-center p-4 rounded w-100 h-100">      
 
                                 <i class="fa fa-user-circle fa-3x mb-3" aria-hidden="true"></i>
-                                <h2>Hybride</h2>
+                                <h3 class="fw-bold">Hybride</h3>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur  commodi architecto? Atque, ad.
                                 <br>
-                                <button type="button" class="bt1 btn btn-dark mt-3">Lire la suite</button>
+                                <button type="button" class="btn btn-dark mt-3 btn-lg">Lire la suite</button>
                 
                        
                             </div>
@@ -285,10 +251,10 @@ height: 530px;
                             <div class="bg-dark text-white text-center p-4 rounded w-100 h-100">
 
                                 <i class="fa fa-users fa-3x mb-3" aria-hidden="true"></i>
-                                <h2>Virtuel</h2>
+                                <h3 class="fw-bold">Virtuel</h3>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur  commodi architecto? Atque, ad.
                                 <br>
-                                <button type="button" class="bt1 btn btn-primary mt-3">Lire la suite</button>
+                                <button type="button" class="btn btn-primary btn-lg mt-3">Lire la suite</button>
                 
                        
                             </div>
@@ -310,15 +276,15 @@ height: 530px;
 
                     <div class="col-md-6">     <img src="images/web.png" alt="" class="w-150">      </div>
                     
-                    <div class="col-md-5 offset-1">
+                    <div class="col-md-5 offset-1 ">
 
-                        <h1  class="text-nowrap">Apprendre les fondamentaux</h1>
+                        <h1  class="text-nowrap fw-bold">Apprendre les fondamentaux</h1>
                         
-                        <div class="p11">
-                            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor culpa debitis voluptatibus eum amet soluta autem ex, molestiae sint consequatur!  </p>                       
+                        
+                            <p class="fw-light "> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor culpa debitis voluptatibus eum amet soluta autem ex, molestiae sint consequatur!  </p>                       
                             <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint libero at deserunt ducimus, ad mollitia, unde hic explicabo blanditiis iste nihil cum, consequatur  odio dolor! consequatur!</p>
                             <button type="button" class="bt2 btn btn-light fw-bold"> <i class="fa fa-angle-right" aria-hidden="true"></i>  Lire la suite</button>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -335,16 +301,13 @@ height: 530px;
 
                         <div class="col-md-6"> 
 
-                            <h1 class="text-nowrap">Apprendre les fondamentaux</h1>
-
-                            <div class="p11">
-
-                                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor culpa debitis voluptatibus eum amet soluta autem ex, molestiae sint consequatur!  </p>                       
+                                <h1 class="text-nowrap fw-bold">Apprendre les fondamentaux</h1>
+                                <p class="fw-light"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.dolor sit amet consectetur adipisicing Dolor culpa debitis voluptatibus eum amet soluta autem ex, molestiae sint consequatur!  </p>                       
                                 <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint libero at deserunt ducimus, ad mollitia, unde hic explicabo blanditiis iste nihil cum, consequatur  odio dolor! consequatur!</p>
                                 <button type="button" class="bt2 btn btn-light fw-bold"> <i class="fa fa-angle-right" aria-hidden="true"></i>  Lire la suite</button>    
-                    
-                            </div>
+    
                         </div>
+                        
                         <div class="col-md-5 offset-1"> <img src="images/fondamentaux.png" alt="" class="w-150"> </div>    
                     </div>
                 </div>
@@ -412,7 +375,8 @@ height: 530px;
 
                             <div class="card-body text-center"> 
                                 <img class="w-50 rounded-circle mb-1" src="images/messi1.jpg" alt="messi1">
-                                <h4 class="text-center fw-bold">Lionel Messi</h4>Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
+                                <h4 class="card-title text-center fw-bold ">Lionel Messi</h4> 
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!</p> 
                            
                                 <div class="icons pt-3"> 
 
@@ -437,7 +401,8 @@ height: 530px;
 
                             <div class="card-body text-center"> 
                                 <img class="w-50 rounded-circle mb-1" src="images/messi2.jpg" alt="messi2">
-                                <h4 class="fw-bold">Lionel Messi</h4>Lorem ipsum dolor, sit amet consectetur elit. Harum fugiat totam, at rerum recusandae dolore fugit quo quaerat nemo  cumque perspiciatis ea exercitati beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. autem. Sit, placeat!
+                                <h4 class="card-title text-center fw-bold">Lionel Messi</h4>
+                                <p class="card-text"> Lorem ipsum dolor, sit amet consectetur elit. Harum fugiat totam, at rerum recusandae dolore fugit quo quaerat nemo  cumque perspiciatis ea exercitati beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. autem. Sit, placeat!</p>
                                 
                                 <div class="icons pt-3"> 
 
@@ -461,7 +426,8 @@ height: 530px;
                         <div class="card p-1">                    <!-- card 3-->
                             <div class="card-body text-center"> 
                                 <img class="w-50 rounded-circle mb-1" src="images/messi3.jpg" alt="messi3">
-                                <h4 class="fw-bold">Lionel Messi</h4>Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
+                                <h4 class="card-title text-center fw-bold">Lionel Messi</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!</p> 
                                 <div class="icons pt-3"> 
 
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -484,7 +450,8 @@ height: 530px;
                         <div class="card p-1">                    <!-- card 4-->
                             <div class="card-body text-center"> 
                                 <img class="w-50 rounded-circle mb-1" src="images/messi4.jpg" alt="messi4">
-                                <h4 class="fw-bold">Lionel Messi</h4>Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
+                                <h4 class="card-title fw-bold">Lionel Messi</h4>
+                                <p class="card-text">Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!</p> 
                                 <div class="icons pt-3"> 
 
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
