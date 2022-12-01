@@ -28,73 +28,54 @@
 
 
 <!-- styles utilises -->
-<style>                        
 
-.navbar{       
+<style>         
 
-font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-       }
-
-.b { 
-    display: table; 
-   }
-
-
-.t {
-    display: table-cell;
-    
-    }
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: larger;
+   
+}
 
 
 label.btn{
 
     margin-left:-5px;
-    margin-bottom: 5px;   
-    height: 45px;
-    width: 160px;
+    margin-bottom: 3px;   
+    height: 46px;
+    width: 180px;
     padding: 10px;
-    white-space:nowrap;     
+    border-radius: 0px 5px 5px 0px;
+    white-space:nowrap;  
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+       
         }
 
 input{
        width: 300px;
        height: 45px;
        padding: 10px;
-       border-radius: 3px 0px 0px 3px;
+       border-radius: 5px 0px 0px 5px;
        border: 0;
+       font-family: Arial, Helvetica, sans-serif;
     }
 
 
-.p1{
+  
+.p11{
 
-       line-height: 1.8;
+       line-height: 1.4;
        font-size: larger;
+       font-family: Arial, Helvetica, sans-serif;
+       font-weight: lighter;
+       
     }
 
 
-.p2{
-
-       line-height: 1.5;
-       font-weight: bold;
-       font-size: large;
-    }
+.bt1{  border-radius: 4px 4px 4px 4px;  font-size: large; }
 
 
-.h1{   
-    
-       font-weight: bold;  
-       white-space:nowrap; 
-
-    }
-
-.q1 {
-
-width: 10cm;
-height: 70px;
-border-bottom: 5px;
-
-}
 
 
 .accordion {
@@ -105,7 +86,6 @@ border-bottom: 5px;
   height: 50px;
   border: none;
   text-align: left;
-  
   transition: 0.4s;
   padding-bottom: 40px;
 }
@@ -115,7 +95,7 @@ border-bottom: 5px;
  padding: 0px 10px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 1s ;
 }
 
 .chevron{
@@ -132,6 +112,7 @@ float: right;
     font-size: large;
     font-weight: bold;
     border-bottom-width: 200px ;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .upbutton{
@@ -139,9 +120,7 @@ float: right;
     font-size: 30px;
     border-radius: 50%;
     padding: 8px;
-   
-    
-     
+
 }
 
 
@@ -171,7 +150,7 @@ float: right;
         <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark py-3">
             <div class="container">
                 <a class="navbar-brand " href="#">
-                    <span class="text-white"> Bootcamp frontal </span>
+                    <span class="text-white fw-bold"> Bootcamp frontal </span>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -203,20 +182,22 @@ float: right;
 
              <!-- section devenir developpeur web-->
 
-        <section id="" class="py-5 bg-dark">
+        <section id="developpeur" class="py-5 bg-dark">
 
             <div class="container">
 
-                <div class="row  align-items-center">
+                <div class="row align-items-center">
 
                     <div class="col-7">
 
-                        <h1 class="fw-bold text-white">Devenir <span class="text-warning">Développeur Web </span></h1>
+                        <div class="p11">
 
-                        <h5 class="text-white">Nous nous concentrons sur l'enseignement à nos étudiants <br> des bases des technologies les plus récentes et les plus <br> performantes pour les préparer à leur premier role de <br> développeur.</h5>
+                            <h1 class="fw-bold text-white">Devenir <span class="text-warning">Développeur Web </span></h1>
+                        
+                            <p class="text-white">Nous nous concentrons sur l'enseignement à nos étudiants <br> des bases des technologies les plus récentes et les plus <br> performantes pour les préparer à leur premier role de <br> développeur.</p>
 
-                        <a href="#" class="btn btn-primary mt-3 btn-lg">Commencez l'inscription</a>
-
+                            <a href="#" class="bt1 btn  btn-primary mt-3 btn-lg">Commencez l'inscription</a>
+                    </div>
                     </div>
 
                     <div class="col-5">
@@ -232,7 +213,7 @@ float: right;
 
                    <!-- section newsletters -->
 
-        <section id="" class="bg-primary">
+        <section id="newsletters"class="bg-primary">
 
             <div class="container">
 
@@ -246,75 +227,76 @@ float: right;
                     
                     <div class="col-5 offset-1">
 
-                        <form action="" >
+                        <form action="form" >
                             <fieldset>
                                 
-                                <input type="text" name="something" id="something" placeholder="Entrez l'e-mail">
-                                <label for="email" type="submit" class="btn btn-dark rounded-0">nous faire parvenir</label>
+                                <input type="email" name="email" id="email" placeholder="Entrez l'e-mail">
+                                <label for="email" type="submit" class="btn btn-dark ">nous faire parvenir</label>
                                 
                             </fieldset>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
+        
 
 
-                 <!-- section virtuel / hybride -->
+                 <!-- aside virtuel / hybride -->
 
-        <section id="" class="py-5  bg-white">
+            <aside id="virtuelhybride" class="py-5  bg-white">
 
-            <div class="container">
+                <div class="container">
 
-                <div class="row">
+                    <div class="row">
 
-                    <div class="col-4">
+                        <div class="col-4">
 
-                        <div class="bg-dark text-white text-center p-3">
+                            <div class="bg-dark text-white text-center p-3 rounded">
 
-                            <i class="fa fa-laptop fa-3x mb-3" aria-hidden="true"></i>
-                            <h2>Virtuel</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur obcaecati commodi architecto? Atque, ad.
-                            <br>
-                            <button type="button" class="btn btn-primary mt-3">Lire la suite</button>
+                                <i class="fa fa-laptop fa-3x mb-3" aria-hidden="true"></i>
+                                <h2>Virtuel</h2>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur obcaecati commodi architecto? Atque, ad.
+                                <br>
+                                <button type="button" class="bt1 btn btn-primary mt-3">Lire la suite</button>
                     
                            
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-4">
+                        <div class="col-4">
 
-                        <div class="bg-secondary text-white text-center p-3">
+                            <div class="bg-secondary text-white text-center p-3 rounded">
 
-                            <i class="fa fa-user-circle fa-3x mb-3" aria-hidden="true"></i>
-                            <h2>Hybride</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur obcaecati commodi architecto? Atque, ad.
-                            <br>
-                            <button type="button" class="btn btn-dark mt-3">Lire la suite</button>
+                                <i class="fa fa-user-circle fa-3x mb-3" aria-hidden="true"></i>
+                                <h2>Hybride</h2>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur obcaecati commodi architecto? Atque, ad.
+                                <br>
+                                <button type="button" class="bt2 btn btn-dark mt-3">Lire la suite</button>
                 
                        
+                            </div>
                         </div>
-                    </div>
                 
-                    <div class="col-4">
+                        <div class="col-4">
 
-                        <div class="bg-dark text-white text-center p-3">
+                            <div class="bg-dark text-white text-center p-3 rounded">
 
-                            <i class="fa fa-users fa-3x mb-3" aria-hidden="true"></i>
-                            <h2>Virtuel</h2>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur obcaecati commodi architecto? Atque, ad.
-                            <br>
-                            <button type="button" class="btn btn-primary mt-3">Lire la suite</button>
+                                <i class="fa fa-users fa-3x mb-3" aria-hidden="true"></i>
+                                <h2>Virtuel</h2>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod consequuntur obcaecati commodi architecto? Atque, ad.
+                                <br>
+                                <button type="button" class="bt2 btn btn-primary mt-3">Lire la suite</button>
                 
                        
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </aside>
         </section>
 
 
 
-                            <!-- section apprendre les fondamentaux 1 -->
+                            <!-- section apprendre les fondamentaux  -->
 
         <section class="pt-5 bg-white" id="fondamentaux">
 
@@ -327,35 +309,41 @@ float: right;
                     <div class="col-5 offset-1">
 
                         <h1 class="h1">Apprendre les fondamentaux</h1>
-                        <p class="p1"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor culpa debitis voluptatibus eum amet soluta autem ex, molestiae sint consequatur!  </p>                       
-                        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint libero at deserunt ducimus, ad mollitia, unde hic explicabo blanditiis iste nihil cum, consequatur  odio dolor! consequatur!</p>
-                        <button type="button" class="btn btn-light fw-bold"> <i class="fa fa-angle-right" aria-hidden="true"></i>  Lire la suite</button>
+                        <div class="p11">
+                            <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor culpa debitis voluptatibus eum amet soluta autem ex, molestiae sint consequatur!  </p>                       
+                            <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint libero at deserunt ducimus, ad mollitia, unde hic explicabo blanditiis iste nihil cum, consequatur  odio dolor! consequatur!</p>
+                            <button type="button" class="btn btn-light fw-bold"> <i class="fa fa-angle-right" aria-hidden="true"></i>  Lire la suite</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        
 
 
+                              <!-- aside apprendre les fondamentaux 2 -->
 
-                          <!-- section apprendre les fondamentaux 2 -->
+            <aside class=" mt-5 bg-dark text-white">
 
-        <section class=" bg-dark text-white">
+                <div class="container">
 
-            <div class="container">
+                    <div class="row align-items-center">
 
-                <div class="row align-items-center">
+                        <div class="col-6"> 
 
-                    <div class="col-6"> 
+                            <h1 class="h1">Apprendre les fondamentaux</h1>
 
-                        <h1 class="h1">Apprendre les fondamentaux</h1>
-                        <p class="p1"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor culpa debitis voluptatibus eum amet soluta autem ex, molestiae sint consequatur!  </p>                       
-                        <p class="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint libero at deserunt ducimus, ad mollitia, unde hic explicabo blanditiis iste nihil cum, consequatur  odio dolor! consequatur!</p>
-                        <button type="button" class="btn btn-light fw-bold"> <i class="fa fa-angle-right" aria-hidden="true"></i>  Lire la suite</button>    
+                            <div class="p11">
+
+                                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor culpa debitis voluptatibus eum amet soluta autem ex, molestiae sint consequatur!  </p>                       
+                                <p class="fw-bold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere sint libero at deserunt ducimus, ad mollitia, unde hic explicabo blanditiis iste nihil cum, consequatur  odio dolor! consequatur!</p>
+                                <button type="button" class="btn btn-light fw-bold"> <i class="fa fa-angle-right" aria-hidden="true"></i>  Lire la suite</button>    
+                    
+                            </div>
+                        </div>
+                        <div class="col-5 offset-1"> <img src="images/fondamentaux.png" alt="" class="w-150"> </div>    
                     </div>
-
-                    <div class="col-5 offset-1"> <img src="images/fondamentaux.png" alt="" class="w-150"> </div>    
                 </div>
-            </div>
+            </aside>
         </section>
 
 
@@ -370,27 +358,27 @@ float: right;
                      <h2 class="text-center mb-5">Questions fréquemment posées</h2>
                     
              
-                    <button class="accordion bg-light border-bottom ">Où se situent exactement<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
+                    <button class="accordion bg-light border-bottom ">Où se situent exactement ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
                     <div class="panel">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     
-                    <button class="accordion bg-light border-bottom ">Combien ça coûte d'assister<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
+                    <button class="accordion bg-light border-bottom ">Combien ça coûte d'assister ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
                     <div class="panel">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     
-                    <button class="accordion bg-light border-bottom ">Que dois-je savoir<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
+                    <button class="accordion bg-light border-bottom ">Que dois-je savoir ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
                     <div class="panel">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
 
-                    <button class="accordion bg-light border-bottom ">Comment m'inscrire<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
+                    <button class="accordion bg-light border-bottom ">Comment m'inscrire ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
                     <div class="panel">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                     
-                    <button class="accordion bg-light ">M'aidez-vous à trouver un emploi<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
+                    <button class="accordion bg-light ">M'aidez-vous à trouver un emploi ?<i class="chevron fa fa-chevron-down" aria-hidden="true"></i></button>
                     <div class="panel">
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
@@ -406,20 +394,20 @@ float: right;
 
             <div class="container">
 
-                <h2 class="text-center text-white mb-3">Nos Moniteurs</h2>
+                <h2 class="text-center text-white mb-3 fw-bold">Nos Moniteurs</h2>
                 <h5 class="text-center text-white mb-5">Nos instructeurs ont tous plus de 5 ans de travail en tant que developpeur Web dans l'industrie </h5>
 
 
 
-                <div class="row mt-4">       
+                <div class="row mt-4 align-items-center">       
 
                     <div class="col-3"> 
 
                         <div class="card p-1">                        <!-- card 1-->
 
                             <div class="card-body text-center"> 
-                                <img class="w-50 rounded-circle" src="images/messi1.jpg" alt="messi1">
-                                <h4 class="text-center fw-bold">Jean Doe</h4>Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
+                                <img class="w-50 rounded-circle mb-1" src="images/messi1.jpg" alt="messi1">
+                                <h4 class="text-center fw-bold">Lionel Messi</h4>Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
                            
                                 <div class="icons pt-3"> 
 
@@ -443,8 +431,8 @@ float: right;
                         <div class="card p-1">                   <!-- card 2-->
 
                             <div class="card-body text-center"> 
-                                <img class="w-50 rounded-circle" src="images/messi2.jpg" alt="messi2">
-                                <h4 class="fw-bold">Jean Doe</h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum fugiat totam, at rerum recusandae dolore fugit quo quaerat nemo  cumque perspiciatis ea exercitati beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
+                                <img class="w-50 rounded-circle mb-1" src="images/messi2.jpg" alt="messi2">
+                                <h4 class="fw-bold">Lionel Messi</h4>Lorem ipsum dolor, sit amet consectetur elit. Harum fugiat totam, at rerum recusandae dolore fugit quo quaerat nemo  cumque perspiciatis ea exercitati beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. autem. Sit, placeat!
                                 
                                 <div class="icons pt-3"> 
 
@@ -467,8 +455,8 @@ float: right;
 
                         <div class="card p-1">                    <!-- card 3-->
                             <div class="card-body text-center"> 
-                                <img class="w-50 rounded-circle" src="images/messi3.jpg" alt="messi3">
-                                <h4 class="fw-bold">Jean Doe</h4>Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
+                                <img class="w-50 rounded-circle mb-1" src="images/messi3.jpg" alt="messi3">
+                                <h4 class="fw-bold">Lionel Messi</h4>Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
                                 <div class="icons pt-3"> 
 
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -490,8 +478,8 @@ float: right;
 
                         <div class="card p-1">                    <!-- card 4-->
                             <div class="card-body text-center"> 
-                                <img class="w-50 rounded-circle" src="images/messi4.jpg" alt="messi4">
-                                <h4 class="fw-bold">Jean Doe</h4>Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
+                                <img class="w-50 rounded-circle mb-1" src="images/messi4.jpg" alt="messi4">
+                                <h4 class="fw-bold">Lionel Messi</h4>Lorem ipsum dolor, sit amet consectetur sit amet consecteturadipisicing elit. Harum fm, at rerum recusandae dolore fugit quo quaerat nemo mollitia beatae voluptate, incidunt cumque perspiciatis ea exercitationem autem. Sit, placeat!
                                 <div class="icons pt-3"> 
 
                                     <i class="fa fa-twitter" aria-hidden="true"></i>
@@ -517,7 +505,7 @@ float: right;
 
         <!-- section informations et contacts -->
 
-        <section class="py-4  bg-white">
+        <section class="py-5 bg-white">
 
             <div class="container">
 
@@ -525,7 +513,7 @@ float: right;
 
                     <div class="col-4">  
                         
-                        <h2>Informations de contact</h2> 
+                        <h2 class="fw-bold mb-3 text-center">Informations de contact</h2>
 
                         <div class="contactinfos">
                             <p class="border-bottom"> <span class="contacttitles">Emplacement principal : </span> 50 Main St Boston MA </p>
@@ -553,9 +541,9 @@ float: right;
 
    <footer class="border-top py-5 bg-dark text-white"  >
 
-        <div class="container">
+        <div class="container ">
 
-            <div class="row"> 
+            <div class="row align-items-center"> 
 
                <div class="col-4"></div>
                <div class="col-4"> <h4>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2021 bootcamp frontend</h4> </div>
