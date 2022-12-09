@@ -146,5 +146,3 @@ else if(couscous <= 20){
 else{
     console.log("je ne peux rien faire pour toi")
 }
-
-
