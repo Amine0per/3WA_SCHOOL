@@ -5,7 +5,7 @@ let nom = "Amine" ;
 const age = 30 ;
  
 
-// affichage sur console
+// affichage sur console concatenation
 console. log (nom + " a " + age + " ans ") ;  
 
 
