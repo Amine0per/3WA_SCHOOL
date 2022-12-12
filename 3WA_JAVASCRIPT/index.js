@@ -5,20 +5,20 @@ let nom = "Amine" ;
 const age = 30 ;
  
 
-// affichage sur console concatenation
+// affichage sur console 
 console. log (nom + " a " + age + " ans ") ;  
 
 
 
 
-// modele litteraux
+// modeles litteraux concatenation simple
 const ville = "Marrakech" ;
 console.log ("j'habite dans la ville de " + ville) ;
 
 
 
 
-// interpolation de chaines
+// modeles litteraux  interpolation de chaines en string
 console.log (`je suis en train
     de faire
             un test d'interpolation de chaines
