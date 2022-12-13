@@ -35,6 +35,19 @@ console.log(typeof prixduproduit ) ;
 
 
 
+//Exerice
+
+let variable = 2 ;
+if( typeof variable == 'string')
+{console.log("La valeur est une chaine de caractere");}
+else {console.log("La valeur est un nombre");}
+
+
+switch (variable)
+{case 2 : case '2' : console.log("La valeur est superieur a 1") ; 
+case 1 : case '1' : console.log("La valeur est superieur a 0") ; break; 
+default : console.log("La valeur est egale a 0") ; }
+
 
 // EXERCICE 3
 
