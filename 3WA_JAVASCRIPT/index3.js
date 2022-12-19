@@ -85,3 +85,26 @@ for(let i=1 ; i<=10 ; i++)
     if (i!=0) { continue; } else { break ;}
 }
 
+//fonction
+
+function essaie(nom,prenom)
+{
+console.log ("bonjour tout le monde mon nom est "+nom +" et mon prenom est "+prenom);
+}
+
+essaie("tajine" , "couscous");
+
+function airecercle(rayon)
+{ 
+
+    return rayon*rayon*Math.PI ;
+}
+
+let rayon = 5;
+let  aire = airecercle(rayon);
+console.log("l'aire du cercle dont le rayon est "+ rayon+ " est : " +aire );
+
+//fonction flechee
+const hello=()=>{
+    console.log ("bonjour tout le monde");
+}

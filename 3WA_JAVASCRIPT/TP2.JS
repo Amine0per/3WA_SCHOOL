@@ -76,3 +76,38 @@ while (j<=20)
     console.log(j + " est un nombre pair" );}
 j++ ;
 }
+
+// EXERCICE 4
+let e=0;
+
+for(let i=0 ;i<=10;i++)
+{
+  e= e+i ;
+ }
+ console.log(e);
+
+
+ let k=0;
+ let m=0;
+
+ while (m<=10)
+ {
+     k= k+m; m++; 
+ }
+ console.log(k);
+
+
+// EXERCICE fonction somme
+
+function somme(u,v)
+{
+   if (typeof u=="number" && typeof v=="number") {
+   return u+v ; }
+   else return "veuillez entrer des chiffres" ;
+}
+
+console.log( somme(5,4) );
+
+console.log( somme(5,"4") );
+
+
