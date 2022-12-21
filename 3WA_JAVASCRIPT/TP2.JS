@@ -111,3 +111,88 @@ console.log( somme(5,4) );
 console.log( somme(5,"4") );
 
 
+//exercice1 minutes secondes
+
+function conversion(minutes)
+{
+    if (typeof minutes=="number") 
+{    return minutes*60;   }
+else return "veuillez entrer des chiffres" ;
+}
+console.log( conversion(10));
+
+
+//function incerementation
+function incerementation(n)
+{
+    return ++n ;
+}
+console.log(incerementation(4));    
+
+//function SurfaceTriangle
+function SurfaceTriangle(base,hauteur)
+{
+   return (base*hauteur)/2 ;
+}
+console.log ( SurfaceTriangle(100,5));
+
+//fonction LePlusGrand
+function LePlusGrand(num1,num2,num3)
+{
+  if (num1>num2 && num1>num3)
+     return num1;
+
+    else if  (num2>num1 && num2>num3)
+        return num2;
+
+    else return num3;
+
+}
+console.log ( LePlusGrand(8,100,4));
+
+
+//fonction LePlusGrand avec Math.max
+function LePlusGrand(num1,num2,num3)
+{
+
+    return  Math.max(num1,num2,num3);
+
+}
+console.log ( LePlusGrand(20,16,200));
+
+//fonction inversion chaine caractere
+function inversion(chaine) 
+{
+
+    let NvelleChaine = "";
+    for (let i = chaine.length - 1; i >= 0; i--) 
+    {
+        NvelleChaine= NvelleChaine + chaine[i];
+    }
+    return NvelleChaine;
+
+}
+
+console.log ( inversion("bonjour"));
+
+let macron = "france";
+console.log ( macron.length);
+console.log(macron[0]);
+console.log(macron[1]);
+
+//fonction inversion chaine caractere methode 2
+function reverseString(string) {
+    return string.split('').reverse().join('');
+}
+console.log(reverseString("hello"));
+
+
+//fonction puissance
+function puissance(num,puis)
+{
+   return Math.pow(num,puis) ;
+}
+console.log(puissance(5,2));
+
+
+
