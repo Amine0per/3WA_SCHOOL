@@ -183,3 +183,13 @@ let total = number.reduce(function(total,a){
     return total + a;
 })
 console.log(total);
+
+
+//splice permet dajouter un element a la table suivant un index defini et sil faut suprimer un ou plusieur element (1,1,"burrito")(1,2,"burrito").. ou decaler (1,0,"burrito")
+const food = ['pizza', 'cake', 'salad', 'cookie'];
+
+food.splice(1,0,"burrito")
+
+console.log(food)
+
+//flat() permet de ramener tout les sous tableaux a un seul tableau exempole x=a.flat() 

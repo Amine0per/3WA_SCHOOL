@@ -195,4 +195,162 @@ function puissance(num,puis)
 console.log(puissance(5,2));
 
 
+//exercice1 24/12/2022
 
+let semaines=['lundi','mardi','mercredi','jeudi','vendredi','samedi','dimanche'];
+for (let i = 0; i < semaines.length; i++) {
+    console.log(semaines[i]);
+  }
+
+
+  //exercice2 24/12/2022
+
+  let condiments= ['Tomates','Oignons','Persil','Carottes','Choux','Poivrons'];
+  for(let i=0; i < condiments.length;  i++){
+      console.log(condiments[i])};
+  //Q2
+  condiments.pop();
+  
+  console.log(condiments);
+  //Q3
+  
+  condiments.push("betterave");
+  console.log(condiments);
+  //Q4
+  condiments.shift();
+  console.log(condiments);
+  //Q5
+  condiments.unshift("Pomme de terre");
+  console.log(condiments);
+
+
+  //exercice 3
+  var recettes = ['pizza', 'pates', 'poulet', 'salade', 'tajine', 'soupe', 'haricot'] ;
+
+  for(i=recettes.length-1 ; i>recettes.length-5;i--)
+  {console.log(recettes[i]);}
+      // methode 2
+      console.log(recettes.slice(3,7)); //slice +1
+      console.log(recettes.slice(-4));
+
+  for(i=0 ; i<=2 ; i++)
+  {console.log(recettes[i]);}
+   // methode 2
+   console.log(recettes.slice(0,3));
+   
+
+
+  console.log(recettes.indexOf("salade"));
+
+  recettes[2] = "Olive";
+  console.log(recettes[2]);
+
+ // exercice 4  multidimensional table
+var p=[[1,2,1,24],[8,11,9,4],[7,0,7,27],[7,4,28,14],[3,10,26,7]];
+
+ for(let i=0 ; i<p.length  ; i++) { //p.length egal au nombre de sous tableau
+    for(let j=0 ; j<p[i].length ; j++) { //p[i].length egal au nombre delements de chaque sous tableau i 
+        console.log(p[i][j])
+ }
+}
+
+let totalq2 = [0,0,0,0,0]
+for(let i=0 ; i<p.length ; i++) {
+    for(let j=0 ; j<p[i].length ; j++) {
+       totalq2[i]+=p[i][j] ; 
+
+        
+} }
+console.log(totalq2);
+
+let totalq3 = 0
+for(let i=0 ; i<p.length ; i++) {
+    for(let j=0 ; j<p[i].length ; j++) {
+       totalq3+=p[i][j]
+
+        
+} }
+console.log(totalq3);
+
+for(let i=0 ; i<p.length ; i++) 
+{
+       console.log(p[i][0]);
+
+        
+} 
+
+
+//exerice 4 deuxieme methode avec foreach
+let v = [
+    [1, 2, 1, 24],
+    [8, 11, 9, 4],
+    [7, 0, 7, 27],
+    [7, 4, 28, 14],
+    [3, 10, 26, 7],
+  ];
+  // Q1
+  console.log("resultat question 1:");
+  v.forEach((e)=> e.forEach((l) => console.log(l)));
+  // Q2
+  console.log("resultat question 2:");
+  v.forEach((e) =>
+    console.log(
+      e.reduce(function (total, b) {
+        return total + b;
+      })
+    )
+  );
+  // Q3
+  console.log("resultat question 3:");
+  let s = 0;
+  v.forEach((e) => e.forEach((l) => (s = s + l)));
+  console.log(s);
+  // Q4
+  console.log("resultat question 4:");
+  v.forEach((e) => console.log(e[0]));
+
+
+
+//exerice 5 M1 create table randomly
+let tableq5 = [];
+for (i=0; i<10; i++)
+{
+   tableq5[i] = i ;
+
+}
+console.log(tableq5);
+
+let tableq6 = [];
+ 
+ for (i=0; i<100; i++)
+ {
+    tableq6[i] = i ;
+
+ }
+ console.log(tableq6);
+
+
+//exerice 5 M2 Mehtode push
+let tableq7= [];
+for (i=0; i<100; i++)
+ {
+    tableq7.push(i);
+    
+
+ }
+     console.log(tableq7);
+
+
+let tableq8= [];
+for (i=0; i<10; i++)
+ {
+    tableq8.push(i);
+    
+
+ }
+     console.log(tableq8);
+
+
+
+ 
+  
