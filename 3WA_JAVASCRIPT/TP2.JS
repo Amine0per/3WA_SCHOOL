@@ -351,6 +351,67 @@ for (i=0; i<10; i++)
      console.log(tableq8);
 
 
+//exercice fonction tableau
 
- 
+
+function tableauN(n)
+{
+let tableau1 =[]
+for (i=0; i<n ; i++) {
+tableau1.push(i);}
+return tableau1;
+}
+
+console.log("question 1");
+console.log(tableauN(11));
+
+
+
+
+function tableauR(n)
+{
+let tableau2 =[];
+for (i=0; i<n ; i++) {
+tableau2.push(Math.round(Math.random() * 100)) ;}
+return tableau2;
+}
+
+console.log("question 2");
+console.log(tableauR(10));
+
+
+
+
+function tableauR2(n)
+{
+let tableau3 =[];
+for (i=0; i<n ; i++) {
+tableau3.push(Math.floor(Math.random() * n))}
+return tableau3;
+
+}
+
+console.log("question 3");
+console.log(tableauR2(50));
   
+  
+
+
+function tableauR3(n,min,max)
+{
+let tableau4 =[];
+for (i=0; i<n ; i++) {
+tableau4.push(Math.floor(Math.random() * (max - min) + min)) ;}
+return tableau4;
+}
+
+console.log("question 4");
+console.log(tableauR3(10 , 25 , 35));
+
+
+// exerice fonction qui permet de trier un tableau par ordre croissant
+function t (array) {
+    
+    return array.sort((a, b) => a - b);
+}
+console.log(t(tableauR3(10 , 25 , 35)));
