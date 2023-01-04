@@ -38,3 +38,5 @@ personne.presentation = () => {
 }
 //Q6
 personne.presentation()
+
+
