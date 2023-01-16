@@ -1,5 +1,5 @@
 
-document.querySelector('h1').textContent="1un autre titre grace au js";
+document.querySelector('h1').textContent="un autre titre grace au js";
 
 document.querySelector('p').textContent="un autre paragraphe";
 
