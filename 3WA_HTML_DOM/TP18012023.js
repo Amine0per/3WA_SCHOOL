@@ -5,7 +5,8 @@
    let EffacezTout = document.querySelector('#EffacezTout');  // selecteur sur le bouton id : EffacezTout
 
    let ToDoList = document.querySelector('#ToDoList');  // selecteur sur notre ol id : ToDoList
-
+   
+   let EffacezDerniereTache = document.querySelector('#EffacezDerniereTache');
 
    Ajouter.addEventListener('click', () => {           // event creation de notre tache
 
@@ -15,7 +16,7 @@
 
                 alert('veuillez saisir une tache');
 
-      } else{
+      } else{   
        
         let CreationListe = `<li class="p-1"> ${NouvelleTache}  
                              <button onclick="CheckerLaTache(this)" class="btn btn-sm btn-success">Fait</button>
@@ -44,10 +45,10 @@
 
    EffacezTout.addEventListener('click', () => {   // suppression de toutes les taches 
 
-   ToDoList.innerHTML =""; } )
+   ToDoList.innerHTML = ""; } )
 
    
-   function Important(e) {       // 
+   function Important(e) {       // rendre la tache important
 
       let imp= e.parentElement;
       imp.style.setProperty('text-decoration', 'underline');
@@ -56,4 +57,7 @@
       
      }
   
-  
+     EffacezDerniereTache.onclick = function(){               // Fonction annuler derniere tache 
+
+      ToDoList.removeChild(ToDoList.lastElementChild);
+     }
