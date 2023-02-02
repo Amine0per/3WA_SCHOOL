@@ -1,0 +1,36 @@
+body {
+    background:crimson;
+    transition: .6s;
+}
+    h2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0;
+        font-size: 50px;
+        text-transform: uppercase;
+        color: #fff;
+        font-family: merienda;
+    }
+    ul{
+        margin-top: 80px;
+    }
+    ul li{
+        display: block;
+        width: 100px;
+        text-align: center;
+        padding: 10px 25px;
+        height: 40px;
+        border : 3px solid #fff;
+       margin: 15px 0;
+   }
+   ul li a{
+       color: #fff;
+       font-size: 15px;
+       line-height: 36px;
+       text-decoration: none;
+       font-family: poppins;
+       text-transform: uppercase;
+       font-weight: bold; 
+  }
