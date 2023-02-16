@@ -1,0 +1,32 @@
+.aaa {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.bbb{
+    font-style: italic;
+}
+
+.ccc{
+    margin-left: 1cm;
+}
+table{
+    border-collapse: collapse;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+ width: 750px;
+}
+
+td {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    
+  }
+
+  th {
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+  }
