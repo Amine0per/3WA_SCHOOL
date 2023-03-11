@@ -1,0 +1,1 @@
+Ceci est un nouveau fichier créé en utilisant PHP!
