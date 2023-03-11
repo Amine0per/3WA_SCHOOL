@@ -1,4 +1,25 @@
-textarea {
-  width: 300px;
-  height: 200px;
+#container{
+padding: 100px;
+
+}
+#NewTaskBox{
+ 
+}
+
+#ToDoList{
+  
+display: flex;
+
+}
+
+#ToDoBox{
+  flex: 1;
+}
+
+#InProgressBox{
+  flex: 1;
+}
+
+#CompletedBox{
+  flex: 1;
 }

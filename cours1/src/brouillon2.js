@@ -1,4 +1,60 @@
 
+
+import React, { useState } from 'react';
+import ReactDOM from 'react-dom/client';
+
+function Xxxx() {
+  const [draggedItem, setDraggedItem] = useState(null);
+  const [items, setItems] = useState([
+    { id: 1, text: 'Item 1' },
+    { id: 2, text: 'Item 2' },
+    { id: 3, text: 'Item 3' }
+  ]);
+
+  const handleDragStart = (event, item) => {
+    setDraggedItem(item);
+    event.dataTransfer.setData('text', item.text);
+  };
+
+  const handleDragEnter = (event, index) => {
+    event.preventDefault();
+    const listItems = [...items];
+    listItems.splice(index, 0, draggedItem);
+    setItems(listItems.filter((item) => item !== draggedItem));
+  };
+
+  const handleDragEnd = () => {
+    setDraggedItem(null);
+  };
+
+  return (
+    <div className="container">
+      {items.map((item, index) => (
+        <div
+          key={item.id}
+          className="item"
+          onDragOver={(event) => event.preventDefault()}
+          onDragEnter={(event) => handleDragEnter(event, index)}
+        >
+          <p
+            draggable
+            onDragStart={(event) => handleDragStart(event, item)}
+            onDragEnd={handleDragEnd}
+          >
+            {item.text}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+};
+
+
+const ttt = ReactDOM.createRoot(document.getElementById('root'));
+ttt.render(<Xxxx/>);
+
+
+
 import React , {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 
@@ -14,13 +70,11 @@ function Xxxx() {
   }
   var newdrag = '' ;
 
-  const handleDragStart = (event , source) => {
-    if (source === 'taskList') {
-      
+  const handleDragStart = (event) => {
     newdrag = event.target.innerText;
     
-  }  else  alert('');
-  }
+  };
+
   const handleDragOver = (e) => {
     e.preventDefault();
   };
@@ -103,7 +157,7 @@ function Xxxx() {
 
         {inprogress.map((newdrag , index) => (
           <p key={index} style = {{border :"2px solid pink" , padding : "10px" , textAlign: 'center' , fontSize: '20px' , margin: "50px" , backgroundColor: 'lightgray' } } draggable
-          onDragStart={(event) => handleDragStart(event )} >
+          onDragStart={(event) => handleDragStart(event)} >
             {newdrag}</p> ))}
 
 
@@ -115,7 +169,7 @@ function Xxxx() {
       <h2>Completed</h2>
       {completed.map((newdrag , index) => (
           <p key={index} style = {{border :"2px solid black" , padding : "10px" , textAlign: 'center' , fontSize: '20px' , margin: "50px" , backgroundColor: 'gray' } } draggable
-          onDragStart={(event) => handleDragStart(event , '')}>
+          onDragStart={(event) => handleDragStart(event)}>
             {newdrag}</p> ))}
       </div>
     </div>

@@ -17,8 +17,8 @@ function Xxxx() {
     setSexe(event.target.value);
   }
  
-  const HandleSubmit = (event) => { 
-    event.preventDefault();
+  const HandleSubmit = (e) => { 
+    e.preventDefault();
     alert(`les informations que vous avez entres sont : ${Nom} , ${Email} , ${MotDePasse} , ${DateDeNaissance} , ${NombreDenfants} , ${Textarea} , ${Sexe} , ${Choix} `); }
 
    
